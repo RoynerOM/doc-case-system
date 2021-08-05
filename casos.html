@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Control de documentos</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/medias.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand" aria-label="Main">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    Documentacion
+                </a>
+                <button id="btn-pdf" class="btn btn-blue">
+                    Descargar PDF
+                </button>
+            </div>
+           
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="col-9 col-8 order">
+                <main id="main" style="margin-bottom: 3rem!important">
+                    <h1>Control De Casos</h1>
+                    <div class="divider"></div>
+                    <p class="lead">Get started with Boost.</p>
+
+                    <div class="image-container">
+                        <img id="image" class="image" src="/img/AsignarCaso.png" alt="registro">
+                    </div>
+
+                    <br>
+                    <br>
+                    <h2>Sesion de usuarios</h2>
+                    <br>
+                    <div class="image-container">
+                        <img id="image1" class="image" src="/img/DetallesCasos.png" alt="login">
+                    </div>
+                    <br>
+                    <br>
+                    <h2>Recuperacion de clave</h2>
+                    <div class="image-container">
+                        <img id="image2" class="image" src="/img/EntregaCasos.png" alt="login">
+                    </div>
+                </main>
+            </div>
+            <div class="col-3 content">
+                <nav class="side-nav sticky-top">
+                    <dl>
+                        <dt class="text-uppercase">Empezando</dt>
+                        <dd>
+                            <a href="Index.html">Introduccion</a>
+                        </dd>
+                        <dd>
+                            <a href="login.html">Sesion y registro</a>
+                        </dd>
+                        <dd>
+                            <a href="dashboard.html">Dashboard</a>
+                        </dd>
+                        <dd>
+                            <a href="personas.html">Control de personas</a>
+                        </dd>
+                        <dd>
+                            <a href="Juntas.html">Control de juntas</a>
+                        </dd>
+                        <dd>
+                            <a href="casos.html" class="active">Control de casos</a>
+                        </dd>
+
+                    </dl>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <p>
+            © 2021 Copyright:
+            <a class="about">Anner Tejada y Royner Oporta</a>
+        </p>
+    </footer>
+</body>
+<script src="/js/html2pdf.bundle.js"></script>
+<script src="/js/index.js"></script>
+</html>

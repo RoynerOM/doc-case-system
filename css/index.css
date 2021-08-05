@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap');
+:root {
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gutter-x: 32px;
+    --bs-gutter-y: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+/*Colore de texto,fondo,border*/
+
+.text-dark {
+    color: #343a40!important
+}
+
+.bg-dark {
+    background-color: #343a40!important;
+    color: #fff;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+/*end*/
+
+/*Estilos de etiquetas html*/
+
+body {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: calc(16.35px + 1.2vw)
+}
+
+h2 {
+    font-size: calc(16.3px + .6vw)
+}
+
+dt {
+    margin: 0 0 5px;
+    font-weight: 700
+}
+
+dd {
+    margin: 0 0 9px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+dl {
+    margin: 0 0 27px;
+}
+
+figure {
+    margin: 0 16px;
+    padding: 16px 10px 1px 10px;
+}
+
+code, pre {
+    font-family: var(--bs-font-monospace);
+    font-size: 16px;
+    direction: ltr;
+    unicode-bidi: bidi-override
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 16px;
+    overflow: auto;
+    font-size: 16px
+}
+
+pre, code {
+    font-size: inherit;
+    word-break: normal;
+    font-size: 16px;
+}
+
+code {
+    word-wrap: break-word;
+    margin-bottom: 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 0;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+footer a {
+    font-weight: 500;
+}
+img{
+    border-radius: 10px;
+}
+/*end*/
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+.image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    /*box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    /*               sombra de abajo                      sombra de arriba*/
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 0, 0, 0.06)
+}
+
+.image {
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image:hover {
+    opacity: 0.70;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+/*Estilos de el modal de imagenes*/
+
+/*Estilo Modal Content*/
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 85%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Estilo boton de cerrar */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/*Efecto hover del boton de cerrar el modal*/
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*end modal*/
+
+/*texto guia*/
+
+.lead {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar>.container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between
+}
+
+.navbar-brand {
+    padding: 6px 0;
+    margin-right: 18px;
+    font-size: 22.5px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #343a40!important
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(32px/ -2);
+    margin-left: calc(32px/ -2)
+}
+
+.grid>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(32px/ 2);
+    padding-left: calc(32px/ 2);
+    margin-top: 32px
+}
+
+.container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.side-nav {
+    top: 16px;
+    margin-top: 5px!important;
+}
+
+.side-nav a {
+    color: #495057;
+    text-decoration: none
+}
+
+.side-nav a:hover {
+    color: #000
+}
+
+.side-nav a.active::after {
+    content: url("/img/arrow.png");
+    color: #0163ee;
+    font-weight: 900;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1;
+}
+
+.text-uppercase {
+    text-transform: uppercase!important
+}
+
+.divider {
+    border-bottom: 2px solid #0163ee;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 60px
+}
+
+.btn {
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 13px 18px;
+    font-size: 12px;
+    border-radius: 50rem!important;
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: #0163ee;
+    box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*Ponel el elemento a la izquierda*/
+
+.order {
+    order: 1!important
+}
+
+/*Animacion del modal*/
+
+.modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    border-radius: 10px;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}

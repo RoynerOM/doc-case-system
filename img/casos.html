@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Control de documentos</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/medias.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand" aria-label="Main">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    Documentacion
+                </a>
+                <button id="btn-pdf" class="btn btn-blue">
+                    Descargar PDF
+                </button>
+            </div>
+           
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="col-9 col-8 order">
+                <main id="main" style="margin-bottom: 3rem!important">
+                    <h1>Control De Casos</h1>
+                    <div class="divider"></div>
+                    <p class="lead">Get started with Boost.</p>
+
+                    <p>To set up the theme, you need:</p>
+
+                    <ul>
+                        <li>
+                            <strong>A command line interface</strong>
+                            <p>
+                                You can use the default command line on Mac and Windows
+                                (Terminal) or use a code editor with a built-in command line
+                                like Visual Studio Code
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Node</strong>
+                            <p>
+                                To install Node, go to
+                                Node.js, download it and
+                                follow the steps (LTS is the recommended version).
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h2>Detalles de Casos</h2>
+
+                    <p>
+                        Open your terminal, make sure you are in the same directory of the
+                        unzipped theme, and run the following command to install all
+                        dependencies:
+                    </p>
+
+                    <div>
+                        <img id="image" class="image" src="/img/Detalles Casos Admin.png" alt="detalles de casos">
+                    </div>
+
+                    <div id="Modal" class="modal">
+                        <!-- Boton de cerrar el modal -->
+                        <span class="close">&times;</span>
+                
+                        <!-- Modal que contiene la imagen -->
+                        <img class="modal-content" id="image-modal">
+                    </div>
+                    
+
+                    <p>
+                        It compiles the source files, generates the site, and starts a
+                        local server.
+                    </p>
+
+                    <p>
+                        Now go to
+                        http://localhost:8080 in your
+                        browser to see the site.
+                    </p>
+                </main>
+            </div>
+            <div class="col-3 content">
+                <nav class="side-nav sticky-top">
+                    <dl>
+                        <dt class="text-uppercase">Empezando</dt>
+                        <dd>
+                            <a href="Index.html">Introduccion</a>
+                        </dd>
+                        <dd>
+                            <a href="login.html">Sesion y registro</a>
+                        </dd>
+                        <dd>
+                            <a href="dashboard.html">Dashboard</a>
+                        </dd>
+                        <dd>
+                            <a href="personas.html">Control de personas</a>
+                        </dd>
+                        <dd>
+                            <a href="Juntas.html">Control de juntas</a>
+                        </dd>
+                        <dd>
+                            <a href="casos.html" class="active">Control de casos</a>
+                        </dd>
+
+                    </dl>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <p>
+            © 2021 Copyright:
+            <a class="about">Anner Tejada y Royner Oporta</a>
+        </p>
+    </footer>
+</body>
+<script src="/js/html2pdf.bundle.js"></script>
+<script src="/js/index.js"></script>
+</html>
