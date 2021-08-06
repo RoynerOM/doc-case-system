@@ -150,14 +150,19 @@ img{
     z-index: 1;
     left: 0;
     top: 0;
-    padding: 30px 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(60, 60, 60, 0.9);
 }
-
+.modal > div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 /*Estilos de el modal de imagenes*/
 
 /*Estilo Modal Content*/
@@ -165,7 +170,7 @@ img{
 .modal-content {
     margin: auto;
     display: block;
-    width: 85%;
+    width: 80%;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
