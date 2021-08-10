@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand" aria-label="Main">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
-                    Documentacion
+                    Documentación
                 </a>
                 <button id="btn-pdf" class="btn btn-blue">
                     Descargar PDF
@@ -33,33 +33,157 @@
                     <h1>Control De Casos</h1>
                     <div class="divider"></div>
 
-                    <p class="lead">Get started with Boost.</p>
+                    <p class="lead">Asignacion de casos</p>
 
-                    <h2>Asignacion de casos</h2>
+                    <h2>Formulario Asignación de Casos</h2>
                     <div class="image-container">
                         <img id="image" class="image" src="/img/AsignarCaso.png" alt="registro">
                     </div>
+                    <p>
+                        En este formulario asignamos un caso y tiene los siguientes campos:
+                    </p>
+                    <br>
+                    <h3>Consecutivo</h3>
+                    <p>
+                        Al guardar un caso, a este se le asignará un consecutivo, al inicio el campo no mostrará nada,
+                        después de guardar un caso en el consecutivo se mostrará un caso por delante del que esta, es
+                        decir, tenemos un caso que sería R-1, en el consecutivo se mostrará como R-2...etc.
+                        <br>
+                        <br> <b>NOTA:</b> Este campo no se puede modificar y es auto incrementable
+                    </p>
+                    <div class="image-container">
+                        <img class="image" src="/img/Cons.png" alt="registro">
+                    </div>
+                    <br>
+                    <br>
+                    <h3>Fecha</h3>
+                    <p>En este campo podemos seleccionar la fecha en que fue asignado el caso</p>
+                    <div class="image-container">
+                        <img class="image" src="/img/Fecha.png" alt="registro">
+                    </div>
+                    <br>
+                    <br>
+                    <h3>Código</h3>
+                    <p>
+                        El código le pertenece a una junta, en este campo escribimos un código válido, presionando la
+                        tecla “Enter”, si el código es válido se llenarán los campos de “Jta/Educ/Adm” (el nombre de una
+                        junta) y Circuito (circuito de una junta) que estén asociados a ese código
+                    </p>
+                    <div class="image-container">
+                        <img id="image" class="image" src="/img/CodigoInst.png" alt="registro">
+                    </div>
+                    <br>
+                    <br>
+                    <h3>Medio Receptivo</h3>
+                    <p>
+                        En este campo se desplegará una lista con las formas de recepción que podrá elegir, basta con
+                        dar un click en un dato de la lista
+                    </p>
+                    <div class="image-container">
+                        <img class="image" src="/img/Medio.png" alt="registro">
+                    </div>
+                    <br>
+                    <br>
+                    <h3>Asignado a</h3>
+                    <p>
+                        Aquí se le desplegará una lista de personas a las que se le asignará el caso
+                    </p>
+                    <br>
+                    <div class="image-container">
+                        <img class="image" src="/img/AsignadoA.png" alt="registro">
 
+                    </div>
+                    <p>Usamos el botón guardar cuando se hayan llenados todos los campos y este como su nombre indica
+                        guardar ese caso. El campo "buscar caso" buscará el consecutivo que se le digite y podrá
+                        reasignar un caso a otra persona, luego proceda a tocar el botón reasignar caso para completar
+                        la acción </p>
+                    <br>
+                    <div class="image-container">
+                        <img class="image" src="/img/guardar.png" alt="login">
+                    </div>
                     <br>
                     <br>
                     <h2>Detalles de casos</h2>
-                    <br>
-
+                    <p>En este formulario se detalla información de los todos los casos asignados como por ejemplo: A
+                        que institución pertenece,a quién se le asignó el caso, la fecha en que se asignó etc...</p>
                     <div class="image-container">
                         <img id="image1" class="image" src="/img/DetallesCasos.png" alt="login">
                     </div>
                     <br>
+                    <br>
+                    <p>Funciones del formulario de detalles de casos:</p>
+
+                    <ul>
+                        <li>
+                            <strong>Filtros de búsquedas</strong>
+                            <p>
+                                Estas funciones permiten al usuario realizar busquedas de casos como por ejemplo:
+                                busqueda por consecutivo,por persona, por código de institución y por recepción.
+                            </p>
+                            <div class="image-container">
+                                <img class="image" src="/img/Filtros.png" alt="login">
+                            </div>
+                            <br>
+                            <br>
+                            <ul>
+                                <li>
+                                    <strong>Por Consecutivo</strong>
+                                    <p>Muestra el caso que coincida con el consecutivo.</p>
+                                </li>
+                                <li>
+                                    <strong>Por persona</strong>
+                                    <p>Muestra la lista de casos que fueron asignados a la persona seleccionada.</p>
+                                </li>
+                                <li>
+                                    <strong>Por circuito</strong>
+                                    <p>Muestra la lista de todos los casos que pertenecen a un circuito.</p>
+                                </li>
+                                <li>
+                                    <strong>Por recepción</strong>
+                                    <p>Muestra la lista de todos los casos que pertenecen a un circuito.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <br>
+                    </ul>
+                    <h3>Agregar y ver observación del caso seleccionado</h3>
+                    <p>
+                        Para ver o agregar la observación de un caso hay que darle click al siguiente botón <img
+                            src="/img/coment.png" alt="botón de comentario" height="30px">, luego aparecera un
+                        formulario donde se podrá agregar el número de acta, fólio, fecha, información de
+                        documentación faltante, observación del caso etc...
+                        <br>
+                        <br>
+                        <b>Formulario:</b>
+                        <div class="image-container">
+                            <img id="image3" class="image" src="/img/Observacion.png" alt="login">
+                        </div>
+                    <br>
+                    <p>Podrá agregar la observación dando click al botón de <b><small>Guardar
+                                observación</small></b> este
+                        mismo botón servirá para modifcar, en caso de que se necesite editar la
+                        observación</p>
+                    <p>Ya por guardada la observación puede indicar que el caso está <b><small>Por
+                                entregar</small></b>, dando click en
+                        botón de <b><small>Marcar entrega pendiente</small></b></p>
+                    </p>
+                    <p>En caso de que quiera pasar la información de la observación agregada puede exportarla a
+                        un archivo <b><small>word,excel o pdf</small></b> dando click en el botón
+                        <b><small>Generar Boleta</small></b>
+                    </p>
+                    <br>
+                    <h3>Refrecar la información de la tabla</h3>
+                    <p>
+                        Después de revisado el caso deberá refrescar o actualizar la tabla para que cargue los
+                        ultimos cambios. Botón <img src="/img/update.png" alt="actualizar tabla" width="30px">
+                    </p>
+
                     <br>
                     <h2>Entrega de casos</h2>
                     <div class="image-container">
                         <img id="image2" class="image" src="/img/EntregaCasos.png" alt="login">
                     </div>
                     <br>
-                    <br>
-                    <h2>Revision de casos</h2>
-                    <div class="image-container">
-                        <img id="image3" class="image" src="/img/Observacion.png" alt="login">
-                    </div>
                 </main>
             </div>
             <div class="col-3 content">
